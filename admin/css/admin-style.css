@@ -1,0 +1,1715 @@
+
+body 
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+.wrapper
+{
+	height: auto;
+	min-height: 100vh;
+	padding: 0;
+	position: relative;
+}
+
+
+.right-container
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: auto;
+	min-height: 100vh;
+}
+
+
+.top-bar
+{
+	position: fixed;
+	width: 85%;
+	top: 0;
+	right: 0;
+	height: 70px;	
+	background: #F0F4F5;
+	border-radius: 5px;
+	z-index: 99;
+}
+
+
+.logo
+{
+	height: 100%;
+	padding: 0;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+
+.logo img
+{
+	float: left;
+	margin-left: 5%;
+	margin-top: 2.5%;
+	width: auto;
+	height: 80px;
+}
+
+
+.logo a
+{ 
+	color: #333;
+}
+
+
+.logo h3
+{
+	float: left;
+	margin-top: 3% !important;
+	margin-left: 5% !important;
+	font-family: 'Dancing script',cursive;
+	font-size: 24px;
+}
+
+
+.top-bar h1,
+.top-bar h2,
+.top-bar h3
+{
+	margin: 0;
+	text-transform: capitalize;
+}
+
+
+.titles h1,
+.titles h2
+{
+	text-align: center;
+	font-family: 'Dancing script',cursive;
+}
+
+
+.titles h1
+{
+	margin-top: 8px;
+	font-size: 25px;
+}
+
+
+.titles h2
+{
+	font-size: 23px;
+}
+
+
+.account img
+{
+	width: 80px;
+	height: 80px;
+}
+
+
+.sidebar
+{
+	width: 15%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #4CA5C4;
+	text-align: center;
+	z-index: 999;
+	padding: 0;
+}
+
+
+.sidebar h2
+{
+	margin-top: : 25px;
+	margin-bottom: 10px;
+	color: #F7F7F7;
+	font-size: 17px;
+	text-align: center;
+	line-height: 25px;
+	font-family: 'Georgia',helvetica,serif;
+}
+
+
+.sidebar img
+{
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+
+.sidebar h4
+{
+	margin: 0;
+	margin-top: 5px;
+	text-align: center;
+	color: #F7F7F7;
+	font-family: 'Georgia',helvetica,serif;
+	font-size: 17px;
+}
+
+
+.sidebar ul
+{
+	padding-left: 0;
+	text-align: left;
+	margin-top: 40px;
+}
+
+
+.sidebar ul li 
+{
+	list-style: none;
+	position: relative;
+}
+
+
+.sidebar ul li ul
+{	
+	display: none;
+	float: left;
+	width: 100%;
+	padding-top: 10px;
+	margin: 0;
+	margin-top: -15px;
+}
+
+
+.sidebar ul li ul li a
+{
+	float: left;
+	width: 100%;
+	font-size: 13px;
+	margin-bottom: 5px;
+	padding-left: 20%;
+}
+
+
+.sidebar ul li a 
+{
+	float: left;
+	width: 100%;
+	padding: 5px 25px;
+	color: #F7F7F7;
+	font-size: 15px;
+	margin-bottom: 15px;	
+	font-family: 'Georgia',helvetica,serif;
+	font-style: italic;
+	text-decoration: none !important;
+}
+
+
+.sidebar ul li a:hover
+{
+	text-decoration: none;
+	background: #fff;
+	color: #4CA5C4;
+}
+
+
+.sidebar ul .fa
+{
+	margin-right: 10px;
+}
+
+
+.right-container 
+{
+	width: 85%;
+	padding-top: 90px;
+}
+
+
+.search-select
+{
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-top: 20px;
+}
+
+
+.search-select h2
+{
+	font-size: 17px;
+	margin: 0;
+	margin-bottom: 20px;
+	color: #4CA5C4;
+}
+
+
+.search-select select
+{
+	width: 100%;
+	height: auto;
+	color: #666;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+}
+
+
+.searchable-table .row
+{
+    margin-top:30px;
+    padding: 0px 10px;
+}
+
+
+.searchable-table .panel-heading div 
+{
+	margin-top: -18px;
+	font-size: 15px;
+}
+
+
+.searchable-table .panel-heading div span
+{
+	margin-left:5px;
+}
+
+
+.searchable-table td
+{
+	font-family: 'Taviraj',serif,serif;
+	font-size: 13px;
+}
+
+
+.searchable-table .panel-body input
+{
+	position: absolute;
+	right: 0;
+	top: -5px; 
+	width: 26%;
+}
+
+
+.searchable-table .panel-body button
+{
+	position: absolute;
+	right: 28%;
+	top: -5px;
+	color: #666; 
+	text-transform: capitalize;
+}
+
+
+.searchable-table h3.panel-title
+{
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #222;
+}
+
+
+.info p
+{
+	float: right;
+	width: 75%;
+	font-family: 'Taviraj',serif,serif;
+	font-size: 13px;
+	color: #51708F;
+	line-height: 25px;
+	background: #D9EDF7;
+	margin-top: 20px;
+	box-sizing: border-box;
+	padding: 15px;
+	margin-right: 3%;
+	border-radius : 5px;
+}
+
+
+footer
+{
+	float: left;
+	width: 90%;
+	padding: 20px 2px;
+	margin-top: 50px;
+	margin-left: 5%;
+	border-top: 1px solid #ccc;
+}
+
+
+footer p
+{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** NEW STUDENTS ****************/
+/*
+/**********************************************/
+
+.manage-students
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 50px;	
+}
+
+
+.manage-students-columns
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+
+
+.manage-students-columns h2,
+.parental-info h2,
+.documents h2
+{
+	font-size: 20px;
+	color: #4CA5C4;
+	margin-bottom: 10px;
+}
+
+
+.manage-students-columns .left
+{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+
+.manage-students-columns .right
+{
+	float: right;
+	width: 50%;
+	height: auto;
+}
+
+
+.manage-students-columns section
+{
+	float: left;
+	width: 60%;
+	height: auto;
+}
+
+
+.manage-students-columns .labels
+{
+	width: 40%;
+}
+
+
+.manage-students-columns section label,
+.manage-students-columns section select,
+.manage-students-columns section input
+{
+	display: block;
+	font-weight: normal;
+	margin-top: 15px;
+	height: 30px;
+	font-family: 'Taviraj',sans-serif;
+}
+
+
+.manage-students-columns input,
+.manage-students-columns select,
+.manage-students-columns textarea
+{
+	width: 80%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	font-size: 12px;
+}
+
+
+.manage-students-columns section img
+{
+	width: 80%;
+	height: auto;
+	max-height: 200px;
+	margin-top: 30px;
+	object-fit: cover;	
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px 1px rgba(0,0,0,.7);
+}
+
+
+.manage-students-columns input[type=file]
+{
+	border: none;
+	padding-left: 0;
+}
+
+
+.manage-students-columns textarea
+{
+	height: 100px;
+	resize: none;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+
+.birth-day select
+{
+	float: left;
+	width: 25%;
+	font-size: 13px !important;
+	margin-right: 2.5%;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+
+.parental-info
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+
+.parental-info section
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+}
+
+
+.parental-info section label
+{
+	width: 20%;
+	font-size: 15px;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-right: 4%;
+	margin-bottom: 0;
+	font-family: 'Taviraj',sans-serif;
+}
+
+
+.parental-info section label:last-child
+{
+	margin-right: 0%;
+}
+
+
+.parental-info section input
+{
+	width: 20%;
+	height: 30px;
+	color: #666;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-right: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************** STUDENT PROFILE *************/
+/*
+/********************************************/
+
+.student-profile
+{
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 5%;
+}
+
+
+.student-profile section.left
+{
+	float: left;
+	width: 22%;
+	height: auto;
+}
+
+
+.dp
+{
+	float: left;
+	width: 90%;
+	color: #666;
+	margin-top: 25px;
+}
+
+
+.dp-img
+{
+	height: 180px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+
+.edit-dp
+{
+	position: absolute;
+	box-sizing: border-box;
+	padding: 5px 8px;
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	top: 143px;
+	right: 6px;
+	display: none;
+}
+
+
+.edit-dp:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+.dp-img:hover .edit-dp
+{	
+	display: block;
+}
+
+
+.dp img 
+{
+	width: 100%;
+	height: 180px;
+	margin-bottom: 30px;
+	object-fit: cover;
+	border:1px solid #40A4F4;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+
+.info-1
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+
+.info-1 h2
+{
+	clear: both;
+	font-size: 17px;
+	color: #333;
+	margin-bottom: 20px;
+	margin-top: 0;
+	text-transform: capitalize;
+}
+
+
+.info-1 table td
+{
+	height: 30px;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+
+.info-1 td span
+{
+	float: right;
+	font-size: 12px;
+	margin-top: 3px;
+	box-sizing:border-box;
+	padding: 5px 15px;
+	background: #E3F2FD;
+	color: #40A4F4;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+
+.dp p
+{
+	font-size: 12px;
+	line-height: 20px;
+	color: #40A4F4;
+}
+
+
+.student-profile section.right
+{
+	float: left;
+	width: 68%;
+	box-sizing: border-box;
+	margin-left: 2.5%;
+	padding-left: 50px;
+}
+
+
+.student-profile section.right h2
+{
+	font-size: 24px;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+
+.student-profile section.right h5
+{
+	color: #40A4F4;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+
+.little-info
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+
+
+.little-info p
+{
+	float: left;
+	padding: 5px 18px;
+	background: rgba(0,156,186,0.7);
+	color: #fff;
+	margin-right: 20px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+
+.little-info span
+{
+	float: left;
+	color: #40A4F4;
+	font-size: 16px;
+	margin-right: 30px;
+	margin-top: 2px;
+}
+
+
+section.right .tab-pane h2
+{
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+
+section.right .tab-pane h2 a
+{
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+
+section.right table td
+{
+	height: 35px;
+	padding-left: 20px;
+	color: #40A4F4;	
+	text-transform: capitalize;
+}
+
+
+section.right table th
+{
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+
+section.right .left-table
+{
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+}
+
+
+section.right .right-table
+{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************** EDIT INFO ****************/
+/*
+/********************************************/
+
+.information
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	background: white;
+	box-sizing: border-box;
+	padding: 30px 0px;
+	padding-right: 2.5%;
+}
+
+
+.load-modal
+{
+	display: none;
+}
+
+
+.information h2
+{
+	font-size: 20px;
+	margin-top:0px;
+	margin-bottom: 15px;
+}
+
+
+#personal-information table
+{
+	margin-top: 10px;
+	float: left;
+	width: 45%;
+}
+
+
+#personal-information table.table-left
+{
+	margin-right: 10%;
+}
+
+
+#dob-select select
+{
+	width: 32.33333%;
+	height: auto;
+	padding-left: 3px;
+}
+
+
+#dob-select 
+{
+	font-size: 12px;
+}
+
+
+.information input,
+.information select
+{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+
+.information select
+{
+	border-radius: 0;
+}
+
+
+.information input[type=submit]
+{
+	float: right;
+	width: 80px;
+	height: 35px;
+	border:1px solid white;
+}
+
+
+.information textarea
+{
+	width: 100%;
+	height: 150px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** TEACHER MODAL **************/
+/*
+/********************************************/
+
+#create-teacher-modal,
+#create-semester-modal,
+#edit-teacher-modal,
+#add-form-modal,
+#edit-form-modal
+{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 1000;
+}
+
+
+#create-teacher-overlay,
+#create-semester-overlay,
+#edit-teacher-overlay,
+#add-form-overlay,
+#edit-form-overlay
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1010;
+}
+
+
+.create-teacher-content,
+.create-semester-content,
+.edit-teacher-content
+{
+	position: fixed;
+	background: #fff;
+	width: 60%;
+	height: auto;
+	left: 20%;
+	top: 5%;
+	box-sizing: border-box;
+	padding: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 10px;
+	z-index: 1020;
+}
+
+
+.add-form-content,
+.edit-form-content
+{
+	position: fixed;
+	background: #fff;
+	width: 40%;
+	height: auto;
+	left: 30%;
+	top: 20%;
+	box-sizing: border-box;
+	padding: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 10px;
+	z-index: 1020;
+}
+
+
+.add-form-content input,
+.edit-form-content input
+{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	color: #666;
+	font-size: 12px;
+	padding-left: 15px;
+	margin-right: 5%;
+}
+
+
+.add-form-content label,
+.edit-form-content label
+{
+	font-weight: normal;
+	color: #666;
+	font-size: 14px;
+}
+
+
+.add-form-content input[type=file],
+.edit-form-content input[type=file]
+{
+	max-width: 100%;
+	overflow-wrap: break-word;
+	padding-left: 0;
+	border: none;
+}
+
+
+.edit-teacher-content
+{
+	position: fixed;
+	height: 590px;
+	overflow-y: scroll;
+}
+
+
+.create-teacher-content h2,
+.create-semester-content h2,
+.edit-teacher-content h2,
+.add-form-content h2,
+.edit-form-content h2
+{
+	font-size: 23px;
+	color: #4CA5C4;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+.create-semester-content
+{
+	width: 30%;
+	top: 20%;
+	left: 35%;
+}
+
+
+.create-semester-content select
+{
+	display: block;
+	width: 100%;
+	height: 30px;
+	color: #666;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	padding-left: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+.create-teacher-content input,
+.create-teacher-content select,
+.create-semester-content input
+{
+	width: 100%;
+	height: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	color: #666;
+	font-size: 12px;
+	padding-left: 15px;
+	margin-right: 5%;
+}
+
+
+.create-teacher-content select
+{
+	margin-top: 10px;
+}
+
+
+.create-semester-content input
+{
+	width: 100%;
+}
+
+
+.edit-teacher-content input[type=text]
+{
+	width: 100%;
+	height: 30px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.edit-teacher-content textarea
+{
+	color: #666;
+	font-size: 15px;
+}
+
+
+.edit-teacher-content textarea.simple-textarea
+{
+	width: 100%;
+	height: 150px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.edit-teacher-content td
+{
+	border: none !important;
+}
+
+
+.edit-teacher-contact section
+{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+
+.edit-teacher-contact label
+{
+	float: left;
+	width: 30%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+
+.edit-teacher-contact label span
+{
+	float: right;
+}
+
+
+.edit-teacher-contact input[type=text],
+.edit-teacher-contact input[type=email],
+.edit-teacher-contact input[type=password]
+{
+	float: right;
+	width: 60%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+	color: #666;
+}
+
+
+.edit-teacher-image 
+{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px 5%;
+}
+
+
+.edit-teacher-image section
+{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+
+.edit-teacher-image img
+{
+	width: 80%;
+	height: auto;
+	object-fit:	 cover;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+
+.edit-teacher-image section input[type=file]
+{	
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+/************** TEACHER PROFILE *************/
+/*
+/********************************************/
+
+.teacher-profile
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 30px 50px;
+	font-family: 'Taviraj',sans-serif;
+}
+
+
+.teacher-profile aside
+{
+	float: left;
+	width: 30%;
+	height: auto;
+	box-sizing: border-box;
+	padding-right: 50px;
+}
+
+
+.teacher-profile aside img
+{
+	width: 90%;
+	height: auto;
+	max-height: 200px;
+	object-fit: cover;
+	border: 1px solid #4CA5C4;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+
+.teacher-image
+{
+	position: relative;
+}
+
+
+.teacher-profile aside a.edit-teacher-button
+{
+	float: right;
+	position: absolute;
+	bottom: 6px;
+	right: 13%;
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	opacity: 0;
+
+	-webkit-transition:background,0.5s;
+	-moz-transition:background,0.5s;
+	-ms-transition:background,0.5s;
+	-o-transition:background,0.5s;
+	transition:background,0.5s;
+}
+
+
+.teacher-profile aside a.edit-teacher-button:hover
+{
+	text-decoration: none;
+	background: black;
+}
+
+
+.teacher-profile aside .teacher-image:hover a.edit-teacher-button
+{
+	opacity: 1;
+}
+
+
+.teacher-profile aside h3
+{
+	font-size: 20px;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-profile aside section
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+
+.teacher-profile aside section label
+{
+	float: left;
+	width: 25%;
+	height: auto;
+	font-size: 13px;
+	color: #4CA5C4;
+	font-weight: normal;
+}
+
+
+.teacher-profile aside section h4
+{
+	font-size: 13px;
+	color: #4CA5C4;
+	font-weight: normal;	
+}
+
+
+.teacher-profile aside section p
+{
+	float: left;
+	width: 75%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	margin: 0;
+	font-size: 13px;
+}
+
+
+.teacher-profile .departmental-info
+{
+	margin-top: 30px;
+	color: #4CA5C4;
+}
+
+
+.teacher-profile .departmental-info p
+{
+	font-size: 13px;
+	padding-left: 0;
+}
+
+
+.teacher-profile aside .address
+{
+	margin-bottom: 30px;
+}
+
+
+.teacher-profile aside .address p
+{
+	padding-left: 0;
+	display: block;
+}
+
+
+.teacher-info-content
+{	
+	float: left;
+	width: 70%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 10px;
+	text-align: justify;
+}
+
+
+.teacher-info-content p
+{
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-info-content h1
+{
+	font-size: 20px;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+.teacher-info-content h2
+{
+	font-size: 15px;
+	color: #4CA5C4;
+	margin-top: 0;
+	margin-bottom: -10px;
+}
+
+
+.teacher-info-content div h2
+{
+	font-size: 20px;
+	color: #4CA5C4;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-info-content div li
+{
+	margin-bottom: 10px;
+}
+
+
+.teacher-profile .fa-pencil
+{
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* OFFERED COURSES **************/
+/*
+/********************************************/
+
+.offered-courses
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 4%;
+	padding-right: 0%;
+	margin-top: 90px;
+}
+
+
+.offered-courses h2
+{
+	color: #4CA5C4;
+	font-size: 23px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+.offered-courses .labels
+{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 0px;
+	clear: both;
+}
+
+
+.offered-courses .labels label,
+.offered-courses textarea
+{
+	width: 12%;
+	margin-right: 1%;
+	height: auto;
+	text-align: center;
+}
+
+
+.offered-courses input[type=text]
+{
+	width: 12%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #666;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+
+.offered-courses textarea
+{
+	height: 60px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #666;
+	font-size: 14px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+
+.row-select
+{
+	position: fixed;
+	top: 50px;
+	left: 19%;
+	float: left;
+	width: 75%;
+	height: auto;
+	background: #fff;
+	box-sizing: border-box;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	padding-top: 40px;
+	padding-bottom: 25px;
+	padding-left: 1%;
+	padding-right: 1%;
+	z-index: 9;
+}
+
+
+.row-select h2
+{
+	float: left;
+	width: 50%;
+	height: auto;
+	margin: 0;
+	margin-top: 5px;
+	padding-bottom: 15px;	
+}
+
+
+.row-select h4
+{
+	float: right;
+	width: 17%;
+	height: auto;
+	font-family: 'Georgia',helvetica,sans-serif;
+	font-style: italic;
+	margin-top: 5px;
+}
+
+
+.row-select input
+{
+	float: right;
+	width: 30%;
+	height: 25px !important;
+	border-radius: 0px !important;
+	margin-right: 2% !important;
+}
+
+
+#show-offered-course
+{
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** FORMS LIST ****************/
+/*
+/********************************************/
+
+.forms,
+.service-form
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 4%;
+	padding-right: 0%;
+}
+
+
+.forms h2
+{
+	color: #4CA5C4;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+
+.forms .searchable-table
+{
+	margin-left: -28px;
+}
+
+
+.forms .searchable-table tr td:nth-child(3),
+.forms .searchable-table tr th:nth-child(3)
+{
+	text-align: center;
+}
+
+
+.service-form h2
+{
+	color: #4CA5C4;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: -5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
