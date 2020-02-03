@@ -1,0 +1,1534 @@
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,li,a,span,nav,div,section
+{
+	font-family: 'Taviraj',helvetica,sans-serif;
+}
+
+
+nav 
+{
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: #286090;
+}
+
+
+nav p
+{
+	float: left;
+	margin-left: 30px;
+	font-size: 18px;
+	line-height: 50px;
+	color: #fafafa;
+}
+
+
+nav ul
+{
+	float: right;
+	margin-right: 30px;
+	padding-left: 0;
+	margin-top: 15px;
+}
+
+
+nav li
+{
+	float: right;
+	display: inline;
+	margin-right:25px;
+	font-size: 15px;
+	color: #fafafa;
+}
+
+
+nav li a
+{
+	color: #fafafa;
+}
+
+
+nav li a:hover
+{
+	color: #fafafa;
+	text-decoration: underline;
+}
+
+
+.right-container
+{
+	width: 85%;
+	min-height: calc(100vh - 50px);
+	height: auto;
+	float: right;
+	margin-top: 50px;
+	box-sizing: border-box;
+	padding-left: 5%;
+}
+
+
+.sidebar
+{
+	width: 15%;
+	height: calc(100% - 50px);
+	border-right: 1px solid #286090;
+	position: fixed;
+	left: 0;
+	top: 50px;
+	background: #286090;
+}
+
+
+.sidebar h3
+{
+	padding-left: 15%;
+	font-size: 15px;
+	color: #fafafa;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+.sidebar ul
+{
+	padding-left: 15%;
+	padding-bottom: 20px;
+}
+
+
+.sidebar ul li
+{
+	list-style: none;	
+	margin-top: 15px;
+}
+
+
+.sidebar ul i
+{
+	margin-right: 15px;
+}
+
+
+.sidebar ul a
+{
+	color: #fafafa;
+	text-transform: capitalize;
+}
+
+
+.sidebar ul a:hover
+{
+	text-decoration: underline;
+}
+
+
+.sidebar p
+{
+	float: left;
+	margin-top: 20px;
+	color: #fafafa;
+	font-size: 13px;
+	padding-left: 15%;
+}
+
+
+.sidebar p a
+{
+	color: #fafafa;
+}
+
+
+.search-select
+{
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-top: 20px;
+}
+
+
+.search-select h2
+{
+	font-size: 17px;
+	margin: 0;
+	margin-bottom: 20px;
+	color: #286090;
+}
+
+
+.search-select select
+{
+	width: 100%;
+	height: auto;
+	color: #666;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+}
+
+
+.searchable-table .row
+{
+    margin-top:30px;
+    padding: 0px 10px;
+}
+
+
+.searchable-table .panel-heading div 
+{
+	margin-top: -18px;
+	font-size: 15px;
+}
+
+
+.searchable-table .panel-heading div span
+{
+	margin-left:5px;
+}
+
+
+.searchable-table td
+{
+	font-family: 'Taviraj',serif,serif;
+	font-size: 13px;
+}
+
+
+.searchable-table .panel-body input
+{
+	position: absolute;
+	right: 0;
+	top: -5px; 
+	width: 26%;
+}
+
+
+.searchable-table .panel-body button
+{
+	position: absolute;
+	right: 28%;
+	top: -5px;
+	color: #666; 
+	text-transform: capitalize;
+}
+
+
+.searchable-table h3.panel-title
+{
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #222;
+}
+
+
+.info p
+{
+	float: right;
+	width: 75%;
+	font-family: 'Taviraj',serif,serif;
+	font-size: 13px;
+	color: #51708F;
+	line-height: 25px;
+	background: #D9EDF7;
+	margin-top: 20px;
+	box-sizing: border-box;
+	padding: 15px;
+	margin-right: 3%;
+	border-radius : 5px;
+}
+
+
+footer
+{
+	float: left;
+	width: 90%;
+	padding: 20px 2px;
+	margin-top: 50px;
+	border-top: 1px solid #ccc;
+}
+
+
+footer p
+{
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** TEACHER MODAL **************/
+/*
+/********************************************/
+
+#edit-teacher-modal
+{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 1000;
+}
+
+
+#edit-teacher-overlay
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1010;
+}
+
+
+.edit-teacher-content
+{
+	position: fixed;
+	background: #fff;
+	width: 60%;
+	height: auto;
+	left: 20%;
+	top: 5%;
+	box-sizing: border-box;
+	padding: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 10px;
+	z-index: 1020;
+}
+
+
+.edit-teacher-content
+{
+	position: fixed;
+	height: 590px;
+	overflow-y: scroll;
+}
+
+
+.edit-teacher-content h2
+{
+	font-size: 23px;
+	color: #286090;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+.edit-teacher-content input[type=text]
+{
+	width: 100%;
+	height: 30px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.edit-teacher-content textarea
+{
+	color: #666;
+	font-size: 15px;
+}
+
+
+.edit-teacher-content textarea.simple-textarea
+{
+	width: 100%;
+	height: 150px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.edit-teacher-content td
+{
+	border: none !important;
+}
+
+
+.edit-teacher-contact section
+{
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+
+.edit-teacher-contact label
+{
+	float: left;
+	width: 30%;
+	height: 30px;
+	margin-bottom: 20px;
+}
+
+
+.edit-teacher-contact label span
+{
+	float: right;
+}
+
+
+.edit-teacher-contact input[type=text],
+.edit-teacher-contact input[type=email],
+.edit-teacher-contact input[type=password]
+{
+	float: right;
+	width: 60%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+	color: #666;
+}
+
+
+.edit-teacher-image 
+{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px 5%;
+}
+
+
+.edit-teacher-image section
+{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+
+.edit-teacher-image img
+{
+	width: 80%;
+	height: auto;
+	object-fit:	 cover;
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+
+.edit-teacher-image section input[type=file]
+{	
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+/************** TEACHER PROFILE *************/
+/*
+/********************************************/
+
+.teacher-profile
+{
+	float: left;
+	width: 95%;
+	height: auto;
+	font-family: 'Taviraj',sans-serif;
+	box-sizing: border-box;
+	padding: 30px 0px;
+	margin-top: 5px;
+}
+
+
+.teacher-profile aside
+{
+	float: left;
+	width: 30%;
+	height: auto;
+	box-sizing: border-box;
+	padding-right: 50px;
+}
+
+
+.teacher-profile aside img
+{
+	width: 90%;
+	height: auto;
+	max-height: 200px;
+	object-fit: cover;
+	border: 1px solid #286090;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+
+.teacher-image
+{
+	position: relative;
+}
+
+
+.teacher-profile aside a.edit-teacher-button
+{
+	float: right;
+	position: absolute;
+	bottom: 6px;
+	right: 13%;
+	background: rgba(0,0,0,.8);
+	color: #fff;
+	font-size: 13px;
+	padding: 5px 10px;
+	border-radius: 2px;
+	opacity: 0;
+
+	-webkit-transition:background,0.5s;
+	-moz-transition:background,0.5s;
+	-ms-transition:background,0.5s;
+	-o-transition:background,0.5s;
+	transition:background,0.5s;
+}
+
+
+.teacher-profile aside a.edit-teacher-button:hover
+{
+	text-decoration: none;
+	background: black;
+}
+
+
+.teacher-profile aside .teacher-image:hover a.edit-teacher-button
+{
+	opacity: 1;
+}
+
+
+.teacher-profile aside h3
+{
+	font-size: 20px;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-profile aside section
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+
+.teacher-profile aside section label
+{
+	float: left;
+	width: 25%;
+	height: auto;
+	font-size: 13px;
+	color: #286090;
+	font-weight: normal;
+}
+
+
+.teacher-profile aside section h4
+{
+	font-size: 13px;
+	color: #286090;
+	font-weight: normal;	
+}
+
+
+.teacher-profile aside section p
+{
+	float: left;
+	width: 75%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	margin: 0;
+	font-size: 13px;
+}
+
+
+.teacher-profile .departmental-info
+{
+	margin-top: 30px;
+	color: #286090;
+}
+
+
+.teacher-profile .departmental-info p
+{
+	font-size: 12px;
+	padding-left: 0;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+
+.teacher-profile aside .address
+{
+	margin-bottom: 30px;
+}
+
+
+.teacher-profile aside .address p
+{
+	padding-left: 0;
+	display: block;
+}
+
+
+.teacher-info-content
+{	
+	float: left;
+	width: 70%;
+	height: auto;
+	box-sizing: border-box;
+	padding-left: 10px;
+	text-align: justify;
+}
+
+
+.teacher-info-content p
+{
+	line-height: 25px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-info-content h1
+{
+	font-size: 20px;
+	color: #333;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+
+.teacher-info-content h2
+{
+	font-size: 15px;
+	color: #286090;
+	margin-top: 0;
+	margin-bottom: -10px;
+}
+
+
+.teacher-info-content div h2,
+.teacher-info-content section h2
+{
+	font-size: 20px;
+	color: #286090;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+
+.teacher-info-content div li,
+.teacher-info-content section li
+{
+	margin-bottom: 10px;
+}
+
+
+.teacher-profile .fa-pencil
+{
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************ ATTENDANCE/COURSES ************/
+/*
+/********************************************/
+
+.attendance,
+.courses
+{
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 2.5%;
+}
+
+
+.attendance h2,
+.courses h2
+{
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+
+.attendance .tab-content,
+.courses .tab-content
+{
+	float: left;
+	width: 80%;
+	height: auto;
+}
+
+
+.attendance .tab-content h3,
+.courses .tab-content h3
+{
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #286090;
+}
+
+
+.attendance ul,
+.courses ul
+{
+	float: left;
+	width: 20%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	margin-top: 45px;
+}
+
+
+.attendance ul li,
+.courses ul li
+{
+	list-style: none;
+}
+
+
+.attendance ul li a,
+.courses ul li a
+{
+	float: left;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #286090;
+	background: #337AB7;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border-radius: 2px;
+	margin-top: 12px;
+	margin-bottom: -10px;
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+
+.attendance ul li a:hover,
+.courses ul li a:hover
+{
+	background: #fff;
+	color: #286090;
+	border: 1px solid #337AB7;
+}
+
+
+.attendance ul li.active a,
+.courses ul li.active a
+{
+	background: #fff;
+	color: #286090;
+	border: 1px solid #337AB7;
+}
+
+
+.attendance .my-modal
+{
+	display: none;
+	width: 100%;
+	min-height: 100vh;
+	height: auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(45,62,80,.5);	
+}
+
+
+.my-modal .modal-content
+{
+	width: 60%;
+	height: 600px;
+	margin: auto;
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	background: rgba(45,62,80,1);	
+	box-sizing: border-box;
+	padding: 20px;
+	overflow-y: scroll;
+}
+
+
+.my-modal .modal-content button
+{
+	position: fixed;
+	left: 22%;
+	bottom: 20%;
+}
+
+
+.my-modal .modal-content h3
+{
+	position: fixed;
+	left: 22%;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+
+.my-modal .modal-content .table-left
+{
+	width: 22%;
+	position: fixed;
+	top: 17%;
+	left: 22%;
+	margin-top: 30px;
+	color: #fff;
+}
+
+
+.my-modal .modal-content .table-left th
+{
+	font-weight: normal;
+	color: #fff;
+}
+
+
+.my-modal .modal-content .table-right
+{
+	float: right;
+	width: 45%;
+	margin-top: 30px;
+	margin-right: 5%;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** CLASSROOM *****************/
+/*
+/********************************************/
+
+.classroom
+{
+	float: left;
+	width: 95%;
+	box-sizing: border-box;
+	padding-right: 2.5%;
+}
+
+
+.classroom h2
+{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	color: #286090;
+	border-bottom: 1px solid #ccc;
+}
+
+
+.classroom h2 span
+{
+	float: right;
+	width: 120px;
+	height: 30px;
+	background: #286090;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	text-transform: capitalize;
+	border-radius: 3px;
+	margin-left: 2px;
+	margin-top: -5px;
+
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+
+.classroom h2 span.activated
+{
+	background: #fff;
+	color: #286090;
+	border: 1px solid #337AB7;
+}
+
+
+.classroom div h3
+{
+	font-size: 18px;
+	color: #286090;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+
+.classroom div section
+{
+	float: left;
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	background: #f7f7f7;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 5px 5%;
+	margin-bottom: 20px;
+}
+
+
+.classroom div section h4,
+.classroom div section h5,
+.classroom div section h6
+{
+	float: left;
+	width: 33.3333%;
+	font-size: 15px;
+	color: #286090;
+	line-height: 25px;
+	margin-top: 5px;
+}
+
+
+.classroom div section h5
+{
+	text-align: center;
+}
+
+
+.classroom div section h6
+{
+	text-align: right;
+}
+
+
+.classroom div section h6 span
+{
+	text-align: center;
+}
+
+
+.classroom div section h4 span,
+.classroom div section h5 span,
+.classroom div section h6 span
+{
+	color: #333;
+	font-size: 12px;
+
+}
+
+
+#up-assignment-modal,
+#up-lecture-modal,
+#up-marks-modal,
+#edit-lecture-modal,
+#edit-assignment-modal
+{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.7);
+	z-index: 1000;
+}
+
+
+#up-assignment-overlay,
+#up-lecture-overlay,
+#up-marks-overlay,
+#edit-lecture-overlay,
+#edit-assignment-overlay
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1010;
+}
+
+
+.up-assignment-content,
+.edit-assignment-content
+{
+	position: fixed;
+	background: #fff;
+	width: 70%;
+	height: 590px;
+	overflow-y: scroll;
+	left: 15%;
+	top: 5%;
+	box-sizing: border-box;
+	padding: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	z-index: 1020;
+}
+
+
+.up-lecture-content,
+.edit-lecture-content,
+.up-marks-content
+{
+	position: fixed;
+	background: #fff;
+	width: 40%;
+	height: 300px;
+	overflow-y: scroll;
+	left: 30%;
+	top: 15%;
+	box-sizing: border-box;
+	padding: 30px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	z-index: 1020;
+}
+
+
+.up-assignment-content h2,
+.up-lecture-content h2,
+.up-marks-content h2,
+.edit-lecture-content h2,
+.edit-assignment-content h2
+{
+	font-size: 23px;
+	color: #286090;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+
+.up-assignment-content input[type=text],
+.up-assignment-content select,
+.up-lecture-content input[type=text],
+.up-marks-content input[type=text],
+.edit-lecture-content input[type=text],
+.edit-assignment-content input[type=text],
+.edit-assignment-content select
+{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.up-assignment-content textarea,
+.edit-assignment-content textarea
+{
+	color: #666;
+	font-size: 15px;
+}
+
+
+.up-assignment-content textarea.simple-textarea,
+.edit-assignment-content textarea.simple-textarea
+{
+	width: 100%;
+	height: 150px;
+	padding-left: 10px;
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+
+.lectures
+{
+	position: relative;
+}
+
+
+.lectures form
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	float: right;
+}
+
+
+.lectures form input
+{
+	float: left;
+}
+
+
+.lectures form input[type=file]
+{
+	width: 110px;
+	height: 30px;
+	margin-left: 10px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+
+.lectures form input[type=text]
+{
+	width: 90px;
+	height: 30px;	
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************** STUDENT PROFILE *************/
+/*
+/********************************************/
+
+.profile
+{
+	width: 100%;
+	float: left;
+}
+
+
+.profile section.left
+{
+	float: left;
+	width: 22%;
+	height: auto;
+}
+
+
+.dp
+{
+	float: left;
+	width: 90%;
+	color: #666;
+	margin-top: 25px;
+}
+
+
+.dp-img
+{
+	height: 180px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+
+.edit-dp
+{
+	position: absolute;
+	box-sizing: border-box;
+	padding: 5px 8px;
+	background: rgba(0,0,0,.7);
+	color: #fff;
+	top: 143px;
+	right: 6px;
+	display: none;
+}
+
+
+.edit-dp:hover
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+.dp-img:hover .edit-dp
+{	
+	display: block;
+}
+
+
+.dp img 
+{
+	width: 100%;
+	height: 180px;
+	margin-bottom: 30px;
+	object-fit: cover;
+	border:1px solid #286090;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+
+.info-1
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+
+.info-1 h2
+{
+	clear: both;
+	font-size: 17px;
+	color: #333;
+	margin-bottom: 20px;
+	margin-top: 0;
+	text-transform: capitalize;
+}
+
+
+.info-1 table td
+{
+	height: 30px;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+
+.info-1 td span
+{
+	float: right;
+	font-size: 12px;
+	margin-top: 3px;
+	box-sizing:border-box;
+	padding: 5px 15px;
+	background: #E3F2FD;
+	color: #286090;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+
+.dp p
+{
+	font-size: 12px;
+	line-height: 20px;
+	color: #286090;
+}
+
+
+.profile section.right
+{
+	float: left;
+	width: 65%;
+	box-sizing: border-box;
+	margin-left: 2.5%;
+	padding-left: 50px;
+}
+
+
+.profile section.right h2
+{
+	font-size: 24px;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+
+.profile section.right h5
+{
+	color: #286090;
+	font-size: 13px;
+	margin-top: 5px;
+}
+
+
+.little-info
+{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin-top: 15px;
+}
+
+
+.little-info p
+{
+	float: left;
+	padding: 5px 18px;
+	background: rgba(0,156,186,0.7);
+	color: #fff;
+	margin-right: 20px;
+	border-radius: 5px;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+
+.little-info span
+{
+	float: left;
+	color: #286090;
+	font-size: 16px;
+	margin-right: 30px;
+	margin-top: 2px;
+}
+
+
+section.right .tab-pane h2
+{
+	margin-bottom: 20px;
+	text-transform: capitalize;
+}
+
+
+section.right .tab-pane h2 a
+{
+	margin-left: 20px;
+	font-size: 15px;
+}
+
+
+section.right table td
+{
+	height: 35px;
+	padding-left: 20px;
+	color: #286090;	
+	text-transform: capitalize;
+}
+
+
+section.right table th
+{
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+
+section.right .left-table
+{
+	float: left;
+	width: 40%;
+	margin-right: 5%;
+}
+
+
+section.right .right-table
+{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************* ATTENDANCE WINDOW ************/
+/*
+/********************************************/
+
+.attendance-window
+{
+	width: 95%;
+	height: auto;
+}
+
+
+.attendance-window h2
+{
+	font-size: 22px;
+	color: #286090;
+	line-height: 30px;
+	margin-bottom: 25px;
+}
+
+
+.attendance-window h2 span
+{
+	font-size: 16px;
+	color: #286090;
+}
+
+
+.attendance-window em
+{
+	float: right;
+	font-size: 15px;
+}
+
+
+.attendance-window table td,
+.attendance-window table th
+{
+	text-align: center;
+}
+
+
+.attendance-window select
+{
+	float: right;
+	width: 20%;
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+.attendance-window button
+{
+	float: right;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
